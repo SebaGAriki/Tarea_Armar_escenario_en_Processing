@@ -19,10 +19,10 @@ class Shooter{
   * direccion = 1 es derecha
   */
   public void mover(int direccion){
-    if(direccion==0){
+    if(direccion==0 && this.posicion.x > 0){
       this.posicion.x -= this.velocidad.x;
     }
-    if(direccion==1){
+    if(direccion==1 && this.posicion.x < width){
       this.posicion.x += this.velocidad.x;
     }
   }
